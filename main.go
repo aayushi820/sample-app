@@ -29,7 +29,7 @@ func main() {
 	http.HandleFunc("/red", redHandler)
 	http.ListenAndServe(":8080", nil)
 }
-}
+
 
 func redHandler(w http.ResponseWriter, r *http.Request) {
 	img := image.NewRGBA(image.Rect(0, 0, 100, 100))
